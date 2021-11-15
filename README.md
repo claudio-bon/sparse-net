@@ -67,4 +67,4 @@ To create the plots used in the report it has been used a python script called *
 The plots created with "plot.py" will be saved in the folder "impl/${implementation}/test_results/plots/".
 
 ## Hardware Info
-The informations about the hardware (CPU and GPU) used for this project can be found in the folder **hardware_info**
+The informations about the hardware (CPU and GPU) used for this project can be found in the folder **hardware_info**.
