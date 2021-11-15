@@ -1,0 +1,1 @@
+tr -d "\r" < $1 >> tmp.sh && rm -f $1 && mv tmp.sh $1
