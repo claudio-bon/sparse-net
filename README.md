@@ -43,7 +43,7 @@ e.g. ```./nn_openmp -n 1000 -k 100```.
 
 In both files using the option **-rd false** allow to perform a deterministic computation (creating data with a linspace function).
 The option **-so true** allows to save the output in a file (it will be saved in the folder "impl/${implementation}/output" where "${implementation}" can be "openmp" or "cuda").
-e.g. ```./nn_cuda -n 5000 -k 250 -rd false -so true" would create a file named "output_N5000_K250_R3.txt```.
+e.g. ```./nn_cuda -n 5000 -k 250 -rd false -so true``` would create a file named "output_N5000_K250_R3.txt.
 
 The option **-nf filename** allows to load the Neural Network from the specified file. **-if filename** allows to load the input from the specified file.
 The easier way to create both data files is to use the Python script **generate_data.py** in the following way:
