@@ -64,49 +64,5 @@ double hpc_gettime( void )
     return ts.tv_sec + (double)ts.tv_nsec / 1e9;
 }
 #endif
-/*
-#ifdef __CUDACC__
 
-#include <stdio.h>
-#include <stdlib.h>
-
-// from https://gist.github.com/ashwin/2652488
-
-#define cudaSafeCall( err ) __cudaSafeCall( err, __FILE__, __LINE__ )
-#define cudaCheckError()    __cudaCheckError( __FILE__, __LINE__ )
-
-inline void __cudaSafeCall( cudaError err, const char *file, const int line )
-{
-#ifndef NO_CUDA_CHECK_ERROR
-    if ( cudaSuccess != err ) {
-        fprintf( stderr, "cudaSafeCall() failed at %s:%i : %s\n",
-                 file, line, cudaGetErrorString( err ) );
-        abort();
-    }
-#endif
-}
-
-inline void __cudaCheckError( const char *file, const int line )
-{
-#ifndef NO_CUDA_CHECK_ERROR
-    cudaError err = cudaGetLastError();
-    if ( cudaSuccess != err ) {
-        fprintf( stderr, "cudaCheckError() failed at %s:%i : %s\n",
-                 file, line, cudaGetErrorString( err ) );
-        abort();
-    }
-
-    // More careful checking. However, this will affect performance.
-    //   Comment away if needed.
-    err = cudaDeviceSynchronize();
-    if( cudaSuccess != err ) {
-        fprintf( stderr, "cudaCheckError() with sync failed at %s:%i : %s\n",
-                 file, line, cudaGetErrorString( err ) );
-        abort();
-    }
-#endif
-}
-
-#endif
-*/
 #endif
