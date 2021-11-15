@@ -118,7 +118,7 @@ int main(int argc, char* argv[]) {
     //Save forward's output
     if (save_output) {
         std::stringstream filename;
-        filename << "data/output_N" << N << "_K" << K << "_R" << R << ".txt";
+        filename << "output/output_N" << N << "_K" << K << "_R" << R << ".txt";
         write_vector(filename.str(), output);
     }
 
