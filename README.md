@@ -4,12 +4,12 @@ In this project I have implemented the forward function of a Neural Network comp
 ## Fast Deployment
 In order to check the proper functioning of the program you can execute the following steps:
 **OpenMP**:
-- cd BonettaClaudio/openmp
+- cd impl/openmp
 - bash compile.sh
 - ./nn_openmp -n 5000 -k 100
 
 **CUDA**:
-- cd BonettaClaudio/cuda
+- cd impl/cuda
 - bash compile.sh
 - ./nn_cuda -n 5000 -k 100
 
