@@ -38,7 +38,7 @@ In order to compile the source files is sufficient to invoke the script called *
 The compilation will produce a file called **nn_openmp** for OpenMP and **nn_cuda** for CUDA.
 
 ## Command Line Arguments
-In order to execute the compiled program it should be specified the options -n (for the input size) and -k (for the number of layers).\br
+In order to execute the compiled program it should be specified the options -n (for the input size) and -k (for the number of layers).<br>
 e.g. ```./nn_openmp -n 1000 -k 100```.
 
 In both files using the option **-rd false** allow to perform a deterministic computation (creating data with a linspace function).
